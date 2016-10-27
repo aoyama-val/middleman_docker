@@ -1,5 +1,7 @@
 # セットアップ
 
+Docker自体は事前にインストールしておいてください。
+
 ```
 git clone https://github.com/aoyama-val/middleman_docker.git
 cd middleman_docker
@@ -12,12 +14,12 @@ docker pull aoyamaval/middleman
 
 ```
 ### ビルドする
-./build.sh
+./middleman.sh build
 # -> ./build以下にhtmlが生成される
 
 
 ### middlemanサーバを起動する
-./start.sh
+./middleman.sh s
 # -> ポート4567で起動するので、curl localhost:4567で確認
 ```
 
