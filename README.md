@@ -27,6 +27,7 @@ docker pull aoyamaval/middleman
 # このDockerイメージの作り方
 
 ```
+cd make_image
 docker build -t タグ名 .
 ```
 

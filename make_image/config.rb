@@ -37,3 +37,21 @@ configure :build do
   # Minify Javascript on build
   # activate :minify_javascript
 end
+
+
+########################
+#
+# Markdown setting
+#
+########################
+# set :markdown_engine, :kramdown
+
+set :markdown_engine, :redcarpet
+set :markdown, :fenced_code_blocks => true, :smartypants => true, :with_toc_data => true, :tables => true, :autolink => true, :gh_blockcode => true
+
+########################
+#
+# Code highlight
+#
+########################
+activate :syntax
