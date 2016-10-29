@@ -2,6 +2,7 @@
 
 # dockerコンテナを使ってmiddlemanを実行するスクリプト
 
+# --rm コンテナを停止したらすぐにコンテナを削除する
 # -it 端末を割り付ける
 # -v  ホストのディレクトリをコンテナ内にマウントする
 # -w  コンテナのカレントディレクトリを指定する
@@ -9,6 +10,7 @@
 # bundle exec middleman "$@" : コンテナ内で実行するコマンド
 
 docker run \
+  --rm \
   -it \
   -v $PWD/src:/middleman/src \
   -w /middleman/src \
