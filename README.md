@@ -7,12 +7,16 @@ git clone https://github.com/aoyama-val/middleman_docker.git
 cd middleman_docker
 
 ### Dockerイメージを取ってくる
-docker pull aoyamaval/middleman
+docker pull aoyamaval/middleman4
 ```
 
 # 使い方
 
 ```
+### middleman init
+./middleman.sh init
+
+
 ### ビルドする
 ./middleman.sh build
 # -> ./build以下にhtmlが生成される
@@ -27,6 +31,7 @@ docker pull aoyamaval/middleman
 # このDockerイメージの作り方
 
 ```
+cd make_image
 docker build -t タグ名 .
 ```
 
