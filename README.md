@@ -15,11 +15,12 @@ docker pull aoyamaval/middleman4
 ```
 ### middleman init
 ./middleman.sh init
+# -> ./src/source以下にソースが生成される
 
 
 ### ビルドする
 ./middleman.sh build
-# -> ./build以下にhtmlが生成される
+# -> ./src/build以下にhtmlが生成される
 
 
 ### middlemanサーバを起動する

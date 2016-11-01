@@ -19,4 +19,4 @@ docker run \
   bundle exec middleman "$@"
 
 # コンテナ内で生成されたファイルはオーナーがrootになるので、自分に変更しておく
-sudo chown "$USER" -R .
+sudo chown -R "$USER" .
